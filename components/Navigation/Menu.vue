@@ -50,11 +50,6 @@ export default class Menu extends Vue {
   links: link[] = [
     { icon: "home", text: "ホーム", route: "/" },
     { icon: "textsms", text: "xx", route: "/draft" },
-    { icon: "person_outline", text: "xx", route: "/mypage" },
-    { icon: "favorite_border", text: "xx", route: "/status" },
-    { icon: "trending_up", text: "xx", route: "/analysis" },
-    { icon: "description", text: "xx", route: "/memo" },
-    { icon: "settings_applications", text: "xx", route: "/setting" }
   ];
 }
 </script>
