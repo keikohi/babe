@@ -1,0 +1,7 @@
+//マイプロフィール取得 request
+//GET /profiles
+[
+    {
+        "user_id": "TWM9ht7aVB",
+    }
+]

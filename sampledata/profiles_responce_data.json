@@ -1,0 +1,12 @@
+//プロフィール取得 response
+//GET /users/{userId}/profiles
+[
+    {
+        "user_id": "TWM9ht7aVB",
+        "user_name": "Mike",
+        "age": 23,
+        "country":"Japan",
+        "prefecture":"Tokyo",
+        "job":"SE"
+    }
+]

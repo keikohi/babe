@@ -1,0 +1,7 @@
+//プロフィール取得 resquest
+//GET /users/{userId}/profiles
+[
+    {
+        "user_id": "TWM9ht7aVB",
+    }
+]

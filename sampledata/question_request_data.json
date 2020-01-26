@@ -1,0 +1,8 @@
+//プロフィール質問取得 request
+//GET /questions
+[
+    {
+        "user_id": "TWM9ht7aVB",
+        "question_id":1,
+    },
+]

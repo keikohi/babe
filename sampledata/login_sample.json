@@ -1,0 +1,16 @@
+//・ログイン
+//POST /login
+[
+    // usernameとpassでログインする場合
+    {
+        "user_name": "Mike",
+        "password": "123abc",
+        "sns_acount": "none"
+    },
+    // snsアカウントでのログイン
+    {
+        "user_name": "",
+        "password": "",
+        "sns_acount": "fb:abcdef"
+    }
+]

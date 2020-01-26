@@ -1,0 +1,10 @@
+// レビューの登録 request
+// POST /users/{userId}/reviews
+[
+    {
+        "user_id": "TWM9ht7aVB",
+        "other_person": "1HHjvvCykP",
+        "rate":5,
+        "review":"I had a great time with Rin."
+    },
+]

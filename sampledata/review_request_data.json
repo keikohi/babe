@@ -1,0 +1,7 @@
+//レビュー取得 request
+//GET /users/{userId}/reviews
+[
+    {
+        "user_id": "TWM9ht7aVB",
+    },
+]
