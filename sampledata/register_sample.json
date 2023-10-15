@@ -1,0 +1,42 @@
+// ・登録
+// POST /register
+// snsアカウントタグ
+//  tw:twitter,fb:facebook,ig:Instagram,none:連携なし
+[
+    {
+        "user_id": "TWM9ht7aVB",
+        "user_name": "Mike",
+        "age": 23,
+        "email": "qwerty@gmail.com",
+        "password": "123abc",
+        "phone_number": "+818012345678",
+        "sns_acount": "tw:abcdef"
+    },
+    {
+        "user_id": "qKmfywGL6U",
+        "user_name": "kkb",
+        "age": 28,
+        "email": "asdfg@sakura.com",
+        "password": "hogehoge",
+        "phone_number": "+819012345678",
+        "sns_acount": "fb:abcdef"
+    },
+    {
+        "user_id": "1HHjvvCykP",
+        "user_name": "Rin",
+        "age": 24,
+        "email": "o__i_ocha@outlook.com",
+        "password": "hugahuga",
+        "phone_number": "+818098765432",
+        "sns_acount": "ig:abcdef"
+    },
+    {
+        "user_id": "1GGjhrMykg",
+        "user_name": "Kohi",
+        "age": 25,
+        "email": "itoen@oisix.com",
+        "password": "huhahah",
+        "phone_number": "+818098765432",
+        "sns_acount": "none"
+    }
+]

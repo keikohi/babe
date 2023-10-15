@@ -1,0 +1,7 @@
+// レコメンドユーザ request
+// GET /users/recommended
+[
+    {
+        "user_id": "TWM9ht7aVB",
+    },
+]

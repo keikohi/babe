@@ -1,0 +1,13 @@
+// レコメンドユーザ responce
+// GET /users/recommended
+// profiles_responce_data.jsonと一緒
+[
+    {
+        "user_id": "TWM9ht7aVB",
+        "user_name": "Mike",
+        "age": 23,
+        "country":"Japan",
+        "prefecture":"Tokyo",
+        "job":"SE"
+    },
+]

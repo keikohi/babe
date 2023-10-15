@@ -1,0 +1,10 @@
+//レビュー取得 responce
+//GET /users/{userId}/reviews
+[
+    {
+        "reviewer": "TWM9ht7aVB",
+        "reviewee": "1HHjvvCykP",
+        "rate":5,
+        "review":"I had a great time with Rin."
+    },
+]

@@ -1,6 +1,6 @@
 <template>
   <v-card class="overflow-hidden">
-    <Menu v-bind:menuVisibulity="menuVisibulity"/>
+    <Menu v-bind:menuVisibulity="menuVisibulity" />
     <v-app-bar
       absolute
       color="#FC317A"
@@ -11,7 +11,10 @@
       scroll-target="#scrolling-techniques-4"
     >
       <template v-slot:img="{ props }">
-        <v-img v-bind="props" gradient="to top right, rgba(3,49,122,.7), rgba(25,32,72,.7)"></v-img>
+        <v-img
+          v-bind="props"
+          gradient="to top right, rgba(3,49,122,.7), rgba(25,32,72,.7)"
+        ></v-img>
       </template>
 
       <v-app-bar-nav-icon @click="toggleMenu()"></v-app-bar-nav-icon>
@@ -42,27 +45,51 @@
       </v-menu>
 
       <template v-slot:extension>
-        <v-tabs align-with-title background-color="transparent">
-          <v-tab>Tab 1</v-tab>
-          <v-tab>Tab 2</v-tab>
+        <v-tabs
+          v-model="tab"
+          background-color="deep-purple accent-4"
+          class="elevation-2"
+          dark
+        >
+          <v-tab
+            v-for="tab in tabs"
+            :key="tab.key"
+            align-with-title
+            background-color="transparent"
+          >
+            {{ tab.title }}
+          </v-tab>
+          <v-tabs-items v-model="tab">
+          <v-tab-item v-for="tab in tabs" :key="tab.key" >
+            <v-card flat tile>
+              <v-card-text>{{ tab.text }}</v-card-text>
+            </v-card>
+          </v-tab-item>
+          </v-tabs-items>
         </v-tabs>
       </template>
     </v-app-bar>
-    <v-sheet id="scrolling-techniques-4" class="overflow-y-auto" max-height="700">
+    <v-sheet
+      id="scrolling-techniques-4"
+      class="overflow-y-auto"
+      max-height="700"
+    >
       <v-container style="height: 1000px;"></v-container>
     </v-sheet>
   </v-card>
-   
-  
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Menu from "~/components/Navigation/Menu.vue"
+import Menu from "~/components/Navigation/Menu.vue";
 
-// { title: 'Click Me' },
 interface item {
   title: string;
+}
+interface tab{
+  title: string;
+  text: string;
+  key: string;
 }
 
 @Component({
@@ -72,13 +99,17 @@ interface item {
 })
 
 export default class Index extends Vue {
-  items: item[] = [{ title: "Click Me" }, { title: "Click Me" }];
+  tab: string = "home"
+  items: item[] = [{ title: "My Account" }, { title: "Sign Out" }];
+  tabs: tab[] = [{ title: "home", text: "home", key: "home" },
+                { title: "search", text: "search user", key: "search" },
+                { title: "history", text: "history", key: "history" },
+                { title: "setting", text: "about settings", key: "setting" }];
 
   menuVisibulity: boolean = false;
 
   toggleMenu(): void {
     this.menuVisibulity = !this.menuVisibulity;
   }
-
 }
 </script>

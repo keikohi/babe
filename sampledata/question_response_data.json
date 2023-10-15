@@ -1,0 +1,15 @@
+//プロフィール質問取得 response
+//GET /questions
+// input_type: radio, text,
+[
+    {
+        "user_id": "TWM9ht7aVB",
+        "question_id":1,
+        "question": "I'm a ",
+        "input_type":"radio",
+        "select": {
+        	"first":"MAN",
+        	"second":"WOMAN"
+        }
+    }
+]

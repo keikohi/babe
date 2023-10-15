@@ -14,7 +14,7 @@
     <v-divider></v-divider>
 
     <v-list >
-      <v-list-item v-for="link in links" :key="link.text" link>
+      <v-list-item v-for="link in links" :key="link.icon" link>
         <v-list-item-icon>
           <v-icon>{{ link.icon }}</v-icon>
         </v-list-item-icon>

@@ -1,0 +1,16 @@
+//マイプロフィール取得 response
+//GET /profiles
+[
+    {
+        "user_id": "TWM9ht7aVB",
+        "user_name": "Mike",
+        "age": 23,
+        "email": "qwerty@gmail.com",
+        "password": "123abc",
+        "phone_number": "+818012345678",
+        "sns_acount": "tw:abcdef",
+        "country":"Japan",
+        "prefecture":"Tokyo",
+        "job":"SE"
+    }
+]
